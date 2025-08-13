@@ -22,18 +22,83 @@ a {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    border: 1px solid white;
+    
 }
 
 .header {
     height: 92px;
-    padding: 16px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
 
+.header-right {
+    display: flex;
+    gap: 60px;
 }
 
 .header-logo {
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.header-logo img {
+    width: 40px;
+}
+
+.header-logo .logo-text {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-links .dropdown {
+    transition: color 0.3s ease;
+}
+.nav-links .dropdown:hover {
+    color: #FBC54E;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.btn {
+    padding: 16px 40px;
+    border-radius: 8px;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn.login {
+    background-color: #FBC54E;
+    color: #273752;
+}
+
+.btn.login:hover {
+    background-color: #f9b300;
+}
+
+.btn.call-to-action {
+    background-color: #4F9CF9;
+    color: #ffffff;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.btn.call-to-action:hover {
+    background-color: #2385fc;
 }
