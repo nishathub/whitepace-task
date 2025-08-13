@@ -154,8 +154,6 @@ a {
     text-align: center;
 }
 
-.hero-image img {}
-
 /* PROJECT + WORK */
 
 .hero-title.project-title,
@@ -169,3 +167,117 @@ a {
     color: #212529;
 }
 
+/* WORK  */
+.ellipse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #A7CEFC;
+    border-radius: 50%;
+    position: relative;
+}
+
+.ellipse-large {
+    height: 660px;
+    width: 660px;
+}
+
+.ellipse-small {
+    height: 390px;
+    width: 390px;
+    border: 2px dashed #A7CEFC;
+    border-radius: 50%;
+}
+
+.ellipse-center {
+    height: 100px;
+    width: 100px;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 0 50px 0px #26262630;
+}
+
+.ellipse-center img {
+    width: 60px;
+}
+
+.avatar {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.avatar.blue {
+    background-color: #37A3FF;
+}
+
+.avatar.green {
+    background-color: #0DC46E;
+}
+
+.avatar.red {
+    background-color: #FF5758;
+}
+
+.avatar.yellow {
+    background-color: #FFDC4D;
+}
+
+.avatar.dark-yellow {
+    background-color: #FFBF60;
+}
+
+.ellipse-large>.avatar:nth-child(1) {
+    top: 10px;
+    left: 20%;
+    transform: translateX(-20%);
+}
+
+.ellipse-large>.avatar:nth-child(2) {
+    left: -35px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ellipse-large>.avatar:nth-child(3) {
+    bottom: 10px;
+    left: 20%;
+    transform: translateX(-20%);
+}
+
+.ellipse-large>.avatar:nth-child(4) {
+    right: -15px;
+    top: 70%;
+    transform: translateY(-70%);
+}
+
+.ellipse-large>.avatar:nth-child(5) {
+    top: 50px;
+    right: 10%;
+    transform: translateX(-10%);
+}
+
+.ellipse-small>.avatar:nth-child(1) {
+    left: -35px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ellipse-small>.avatar:nth-child(2) {
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ellipse-small>.avatar:nth-child(3) {
+    right: -35px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ellipse-small>.avatar:nth-child(4) {
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+}
