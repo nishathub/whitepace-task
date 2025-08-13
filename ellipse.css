@@ -6,6 +6,7 @@
     border: 2px dashed #A7CEFC;
     border-radius: 50%;
     position: relative;
+    z-index: 1;
 }
 
 .ellipse-large {
@@ -37,6 +38,7 @@
     width: 70px;
     border-radius: 50%;
     position: absolute;
+    z-index: 10;
     overflow: hidden;
     display: flex;
     align-items: end;
@@ -45,8 +47,6 @@
 
 .avatar img {
     width: 50px;
-
-
 }
 
 .avatar.blue {

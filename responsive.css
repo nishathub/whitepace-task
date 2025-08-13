@@ -17,14 +17,19 @@
         font-size: 22px;
     }
 
-    .header-right .nav-links, 
-    .header-right .btn{
+    .header-right .nav-links,
+    .header-right .btn {
         display: none;
     }
 
     .small-device-nav {
         display: block;
         position: fixed;
+        z-index: 999;
+    }
+
+    #navIcon {
+        display: block;
     }
 
     .hero-section {
@@ -64,7 +69,6 @@
     .ellipse-large {
         height: 300px;
         width: 300px;
-        border: 2px dashed #A7CEFC;
     }
 
     .avatar {
@@ -157,9 +161,14 @@
         gap: 30px;
     }
 
+    #navIcon {
+        display: block;
+    }
+
     .small-device-nav {
         display: block;
         position: fixed;
+        z-index: 999;
     }
 
     .header-right .nav-links {
@@ -186,6 +195,7 @@
         font-size: 18px;
         text-align: center;
     }
+
     .hero-title.project-title,
     .work-title {
         font-size: 48px;
@@ -229,7 +239,7 @@
         width: 280px;
     }
 
-     .ellipse-small>.avatar:nth-child(1) {
+    .ellipse-small>.avatar:nth-child(1) {
         left: -25px;
     }
 
@@ -248,13 +258,15 @@
 
 @media (min-width: 1024px) and (max-width: 1200px) {
 
-    .header{
+    .header {
         padding: 0 16px;
     }
+
     .header-right {
         gap: 30px;
     }
-    .nav-links{
+
+    .nav-links {
         gap: 20px;
     }
 
