@@ -19,6 +19,7 @@ p {
 a {
     text-decoration: none;
     color: white;
+    cursor: pointer;
 }
 
 button {
@@ -134,13 +135,15 @@ button {
 
 #navIcon {
     display: none;
+    cursor: pointer;
 }
 #navIcon i {
     font-size: 22px;
     color: white;
+    transition: color .3s ease;
 }
 
-.small-device-nav i:hover {
+#navIcon i:hover {
     color: #FBC54E;
 }
 
@@ -177,6 +180,11 @@ button {
 .nav-close-btn {
     color: white;
     font-size: 22px;
+    cursor: pointer;
+    transition: color .3s ease;
+}
+.nav-close-btn:hover {
+    color: red;
 }
 
 /* HERO BANNER  */
