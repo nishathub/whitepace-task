@@ -20,6 +20,11 @@ a {
     color: white;
 }
 
+button {
+    border: none;
+    background-color: transparent;
+}
+
 #banner_container {
     background-color: #043873;
     min-height: 100vh;
@@ -68,11 +73,11 @@ a {
     align-items: center;
 }
 
-.nav-links .dropdown {
+.dropdown {
     transition: color 0.3s ease;
 }
 
-.nav-links .dropdown:hover {
+.dropdown:hover {
     color: #FBC54E;
 }
 
@@ -85,7 +90,6 @@ a {
 .btn {
     padding: 16px 24px;
     border-radius: 8px;
-    border: none;
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
@@ -116,6 +120,53 @@ a {
 
 .btn.call-to-action:hover {
     background-color: #2385fc;
+}
+
+.small-device-nav {
+    display: none;
+}
+
+.small-device-nav i {
+    font-size: 22px;
+    color: white;
+}
+
+.small-device-nav i:hover {
+    color: #FBC54E;
+}
+
+.side-navbar {
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: right 0.5s ease;
+}
+
+.side-navbar.hidden {
+    right: -1400px;
+}
+
+.side-navLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 18px;
+    padding: 16px;
+}
+
+.side-nav-top{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.nav-close-btn {
+    color: white;
+    font-size: 22px;
 }
 
 /* HERO BANNER  */
@@ -151,9 +202,11 @@ a {
 }
 
 .hero-image {
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
-.hero-image img{
+
+.hero-image img {
     width: 100%;
 }
 
@@ -214,10 +267,11 @@ a {
     align-items: end;
     justify-content: center;
 }
-.avatar img{
+
+.avatar img {
     width: 50px;
 
-    
+
 }
 
 .avatar.blue {
@@ -292,4 +346,147 @@ a {
     top: -35px;
     left: 50%;
     transform: translateX(-50%);
+}
+
+@media (max-width: 767px) {
+
+    .content-wrapper {
+        margin-bottom: 0;
+    }
+
+    .header {
+        height: 60px;
+        padding: 0 16px;
+    }
+
+    .header-logo img {
+        width: 30px;
+    }
+
+    .header-logo .logo-text {
+        font-size: 22px;
+    }
+
+    .header-right {
+        display: none;
+    }
+
+    .small-device-nav {
+        display: block;
+    }
+
+    .hero-section {
+        grid-template-columns: 1fr;
+        text-align: center;
+        min-height: auto;
+        padding: 40px 12px;
+        gap: 30px;
+    }
+
+    .hero-content {
+        order: 2;
+    }
+
+    .hero-title {
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+
+    .hero-description {
+        font-size: 18px;
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+
+    .btn.call-to-action {
+        padding: 12px 18px;
+        font-size: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-image {
+        order: 1;
+    }
+
+    .ellipse-large {
+        height: 300px;
+        width: 300px;
+        border: 2px dashed #A7CEFC;
+    }
+
+    .avatar {
+        height: 30px;
+        width: 30px;
+    }
+
+    .avatar img {
+        width: 20px;
+    }
+
+    .ellipse-large>.avatar:nth-child(1) {
+        top: 15px;
+        left: 40px;
+    }
+
+    .ellipse-large>.avatar:nth-child(2) {
+        left: -10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .ellipse-large>.avatar:nth-child(3) {
+        bottom: 15px;
+        left: 40px;
+    }
+
+    .ellipse-large>.avatar:nth-child(4) {
+        right: -5px;
+        top: 70%;
+        transform: translateY(-70%);
+    }
+
+    .ellipse-large>.avatar:nth-child(5) {
+        top: 20px;
+        right: 40px;
+    }
+
+    .ellipse-small {
+        height: 150px;
+        width: 150px;
+        border: 2px dashed #A7CEFC;
+    }
+
+    .ellipse-small>.avatar:nth-child(1) {
+        left: -15px;
+    }
+
+    .ellipse-small>.avatar:nth-child(2) {
+        bottom: -15px;
+    }
+
+    .ellipse-small>.avatar:nth-child(3) {
+        right: -15px;
+    }
+
+    .ellipse-small>.avatar:nth-child(4) {
+        top: -15px;
+    }
+
+    .ellipse-center {
+        height: 40px;
+        width: 40px;
+        border: 0;
+        border-radius: 10px;
+        box-shadow: 0 0 50px 0px #26262630;
+    }
+
+    .ellipse-center img {
+        width: 18px;
+    }
+
+    .hero-title.project-title,
+    .work-title {
+        font-size: 36px;
+    }
 }
