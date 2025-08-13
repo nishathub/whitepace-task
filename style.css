@@ -6,7 +6,11 @@ body {
     background-color: #ffffff;
     color: white;
 }
-h1,h2,h4,p {
+
+h1,
+h2,
+h4,
+p {
     margin: 0;
     padding: 0;
 }
@@ -21,14 +25,15 @@ a {
     min-height: 100vh;
 }
 
-.banner {
+.content-wrapper {
     max-width: 1200px;
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-
+    margin-bottom: 100px;
 }
 
+/* NAVBAR  */
 .header {
     height: 92px;
     display: flex;
@@ -104,7 +109,8 @@ a {
     align-items: center;
     max-width: fit-content;
 }
-.btn.call-to-action i{
+
+.btn.call-to-action i {
     margin-top: 6px;
 }
 
@@ -112,7 +118,7 @@ a {
     background-color: #2385fc;
 }
 
-/* HERO  */
+/* HERO BANNER  */
 
 .hero-section {
     display: grid;
@@ -120,16 +126,17 @@ a {
     align-items: center;
     gap: 50px;
 }
+
 .hero-section.banner-hero {
     min-height: calc(100vh - 92px);
 }
 
 .hero-content {
-   width: fit;
+    width: fit;
 
 }
 
-h2.hero-title {
+.hero-title {
     font-size: 64px;
     font-weight: bold;
     line-height: 120%;
@@ -147,6 +154,18 @@ h2.hero-title {
     text-align: center;
 }
 
-.hero-image img {
+.hero-image img {}
 
+/* PROJECT + WORK */
+
+.hero-title.project-title,
+.work-title {
+    font-size: 72px;
+    color: #212529;
 }
+
+.hero-description.project-description,
+.work-description {
+    color: #212529;
+}
+
