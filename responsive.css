@@ -1,0 +1,297 @@
+@media (max-width: 767px) {
+
+    .content-wrapper {
+        margin-bottom: 0;
+    }
+
+    .header {
+        height: 60px;
+        padding: 0 16px;
+    }
+
+    .header-logo img {
+        width: 30px;
+    }
+
+    .header-logo .logo-text {
+        font-size: 22px;
+    }
+
+    .header-right .nav-links, 
+    .header-right .btn{
+        display: none;
+    }
+
+    .small-device-nav {
+        display: block;
+        position: fixed;
+    }
+
+    .hero-section {
+        grid-template-columns: 1fr;
+        text-align: center;
+        min-height: auto;
+        padding: 40px 12px;
+        gap: 30px;
+    }
+
+    .hero-content {
+        order: 2;
+    }
+
+    .hero-title {
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+
+    .btn.call-to-action {
+        padding: 12px 18px;
+        font-size: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-image {
+        order: 1;
+    }
+
+    .ellipse-large {
+        height: 300px;
+        width: 300px;
+        border: 2px dashed #A7CEFC;
+    }
+
+    .avatar {
+        height: 30px;
+        width: 30px;
+    }
+
+    .avatar img {
+        width: 20px;
+    }
+
+    .ellipse-large>.avatar:nth-child(1) {
+        top: 15px;
+        left: 40px;
+    }
+
+    .ellipse-large>.avatar:nth-child(2) {
+        left: -10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .ellipse-large>.avatar:nth-child(3) {
+        bottom: 15px;
+        left: 40px;
+    }
+
+    .ellipse-large>.avatar:nth-child(4) {
+        right: -5px;
+        top: 70%;
+        transform: translateY(-70%);
+    }
+
+    .ellipse-large>.avatar:nth-child(5) {
+        top: 20px;
+        right: 40px;
+    }
+
+    .ellipse-small {
+        height: 150px;
+        width: 150px;
+    }
+
+    .ellipse-small>.avatar:nth-child(1) {
+        left: -15px;
+    }
+
+    .ellipse-small>.avatar:nth-child(2) {
+        bottom: -15px;
+    }
+
+    .ellipse-small>.avatar:nth-child(3) {
+        right: -15px;
+    }
+
+    .ellipse-small>.avatar:nth-child(4) {
+        top: -15px;
+    }
+
+    .ellipse-center {
+        height: 40px;
+        width: 40px;
+        border: 0;
+        border-radius: 10px;
+        box-shadow: 0 0 50px 0px #26262630;
+    }
+
+    .ellipse-center img {
+        width: 18px;
+    }
+
+    .hero-title.project-title,
+    .work-title {
+        font-size: 36px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .content-wrapper {
+        margin-bottom: 0;
+    }
+
+    .header {
+        padding: 0 16px;
+    }
+
+    .header-right {
+        display: flex;
+        gap: 30px;
+    }
+
+    .small-device-nav {
+        display: block;
+        position: fixed;
+    }
+
+    .header-right .nav-links {
+        display: none;
+    }
+
+    .hero-section {
+        grid-template-columns: 1fr;
+        text-align: center;
+        min-height: auto;
+        padding: 20px 16px 60px 16px;
+        gap: 50px;
+    }
+
+    .hero-content {
+        order: 2;
+    }
+
+    .hero-title {
+        font-size: 48px;
+    }
+
+    .hero-description {
+        font-size: 18px;
+        text-align: center;
+    }
+    .hero-title.project-title,
+    .work-title {
+        font-size: 48px;
+    }
+
+    .btn.call-to-action {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-image {
+        padding-top: 50px;
+        order: 1;
+    }
+
+    .ellipse-large {
+        height: 480px;
+        width: 480px;
+    }
+
+    .avatar {
+        height: 50px;
+        width: 50px;
+    }
+
+    .avatar img {
+        width: 35px;
+    }
+
+    .ellipse-center {
+        height: 60px;
+        width: 60px;
+    }
+
+    .ellipse-center img {
+        width: 35px;
+    }
+
+    .ellipse-small {
+        height: 280px;
+        width: 280px;
+    }
+
+     .ellipse-small>.avatar:nth-child(1) {
+        left: -25px;
+    }
+
+    .ellipse-small>.avatar:nth-child(2) {
+        bottom: -25px;
+    }
+
+    .ellipse-small>.avatar:nth-child(3) {
+        right: -25px;
+    }
+
+    .ellipse-small>.avatar:nth-child(4) {
+        top: -25px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+
+    .header{
+        padding: 0 16px;
+    }
+    .header-right {
+        gap: 30px;
+    }
+    .nav-links{
+        gap: 20px;
+    }
+
+    .hero-title {
+        font-size: 56px;
+    }
+
+    .hero-section {
+        gap: 30px;
+        padding: 0 16px;
+    }
+
+    .ellipse-large {
+        height: 500px;
+        width: 500px;
+    }
+
+    .ellipse-small {
+        height: 280px;
+        width: 280px;
+    }
+
+    .avatar {
+        height: 60px;
+        width: 60px;
+    }
+
+    .avatar img {
+        width: 40px;
+    }
+
+    .ellipse-center {
+        height: 70px;
+        width: 70px;
+    }
+
+    .ellipse-center img {
+        width: 35px;
+    }
+}
