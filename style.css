@@ -6,6 +6,10 @@ body {
     background-color: #ffffff;
     color: white;
 }
+h1,h2,h4,p {
+    margin: 0;
+    padding: 0;
+}
 
 a {
     text-decoration: none;
@@ -74,7 +78,7 @@ a {
 }
 
 .btn {
-    padding: 16px 40px;
+    padding: 16px 24px;
     border-radius: 8px;
     border: none;
     font-size: 18px;
@@ -98,6 +102,10 @@ a {
     display: flex;
     gap: 8px;
     align-items: center;
+    max-width: fit-content;
+}
+.btn.call-to-action i{
+    margin-top: 6px;
 }
 
 .btn.call-to-action:hover {
@@ -112,16 +120,20 @@ a {
     align-items: center;
     gap: 50px;
 }
+.hero-section.banner-hero {
+    min-height: calc(100vh - 92px);
+}
 
 .hero-content {
-   
+   width: fit;
+
 }
 
 h2.hero-title {
     font-size: 64px;
     font-weight: bold;
     line-height: 120%;
-    
+    margin-bottom: 30px;
 }
 
 .hero-description {
