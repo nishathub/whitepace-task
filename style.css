@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    min-height: 100vh;
+    background-color: #ffffff;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#banner_container {
+    background-color: #043873;
+    min-height: 100vh;
+}
+
+.banner {
+    max-width: 1200px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid white;
+}
+
+.header {
+    height: 92px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.header-logo {
+    
+}
