@@ -229,7 +229,11 @@ button {
 }
 
 /* PROJECT + WORK */
-
+#project-container {
+    background: url("./asset/blob/grid-blob-1.png");
+    background-repeat: no-repeat;
+    background-position: -300px -300px;
+}
 .hero-title.project-title,
 .work-title {
     font-size: 72px;
