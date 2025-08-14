@@ -40,6 +40,10 @@
         gap: 30px;
     }
 
+    .hero-section.banner-hero {
+        min-height: auto;
+    }
+
     .hero-content {
         order: 2;
     }
@@ -181,6 +185,10 @@
         min-height: auto;
         padding: 20px 16px 60px 16px;
         gap: 50px;
+    }
+
+    .hero-section.banner-hero {
+        min-height: auto;
     }
 
     .hero-content {
