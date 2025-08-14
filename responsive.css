@@ -44,6 +44,10 @@
         min-height: auto;
     }
 
+    #banner_container {
+        min-height: auto;
+    }
+
     .hero-content {
         order: 2;
     }
@@ -64,6 +68,7 @@
         font-size: 16px;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 40px;
     }
 
     .hero-image {
@@ -188,6 +193,10 @@
     }
 
     .hero-section.banner-hero {
+        min-height: auto;
+    }
+
+    #banner_container {
         min-height: auto;
     }
 
