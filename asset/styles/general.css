@@ -28,11 +28,12 @@ button {
 }
 
 .underline-style {
-    background: url("./asset/paint-brush.png");
+    background: url("../images/paint-brush.png");
     background-position: bottom right;
 }
+
 #banner_container {
-    background: url("./asset/blob/blob-corner-2.png"), url("./asset/blob/blob-corner-3.png"), url("./asset/blob/blob-corner-4.png"), url("./asset/blob/blob-corner-5.png"), url("./asset/blob/blob-corner-6.png"), url("./asset/blob/blob-corner-7.png"), url("./asset/blob/blob-corner-8.png");
+    background: url("../images/blob/blob-corner-2.png"), url("../images/blob/blob-corner-3.png"), url("../images/blob/blob-corner-4.png"), url("../images/blob/blob-corner-5.png"), url("../images/blob/blob-corner-6.png"), url("../images/blob/blob-corner-7.png"), url("../images/blob/blob-corner-8.png");
     background-repeat: no-repeat;
     background-position: top right, top right;
     background-color: #043873;
@@ -239,7 +240,7 @@ button {
 
 /* PROJECT + WORK */
 #project-container {
-    background: url("./asset/blob/grid-blob-1.png");
+    background: url("../images/blob/grid-blob-1.png");
     background-repeat: no-repeat;
     background-position: -300px -300px;
 }
